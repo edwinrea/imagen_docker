@@ -1,6 +1,6 @@
 FROM ubuntu
 
-RUN apt-get update && apt-get -y install nginx && apt-get install wget
+RUN apt-get update && apt-get -y install nginx && apt-get install -y wget
 
 EXPOSE 80
 ADD entrypoint.sh /tmp
